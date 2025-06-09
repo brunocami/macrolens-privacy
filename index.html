@@ -1,16 +1,109 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy MacroLens</title>
+  <title>Privacy Policy – MacroLens</title>
   <style>
-    body { font-family: sans-serif; margin: 2rem; line-height: 1.6; }
-    h1 { text-align: center; }
+    /* Basic reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    p, li {
+      margin-bottom: 0.75rem;
+    }
+    ul {
+      list-style: disc inside;
+      margin-left: 1rem;
+    }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .container { margin: 1rem; padding: 0.75rem; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.1rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy MacroLens</h1>
-  <p>Aquí va el texto completo de tu política…</p>
+  <div class="container">
+    <h1>Privacy Policy – MacroLens</h1>
+    <p><strong>Last Updated:</strong> May 18, 2025</p>
+
+    <h2>1. Data Controller</h2>
+    <p>For privacy inquiries, contact: <a href="mailto:macrolenssp@gmail.com">macrolenssp@gmail.com</a>.</p>
+
+    <h2>2. Data Collection</h2>
+    <ul>
+      <li>No personal data (name, email, age, gender, location) is collected or stored on external servers.</li>
+      <li>All user-provided information (age, weight, height, goals, meal photos) is stored locally on the device using AsyncStorage.</li>
+      <li>Future planned use of Firebase for anonymous usage metrics; no data linked to personal identity.</li>
+    </ul>
+
+    <h2>3. Purpose of Processing</h2>
+    <p>Local data is used solely to:</p>
+    <ul>
+      <li>Create a personalized nutritional profile.</li>
+      <li>Calculate caloric and macronutrient requirements.</li>
+      <li>Customize the in-app experience (charts, comparisons).</li>
+    </ul>
+
+    <h2>4. Legal Basis</h2>
+    <p>The processing of data is based on the user’s explicit consent by accepting this Privacy Policy and using the application.</p>
+
+    <h2>5. Sharing and Transfers</h2>
+    <ul>
+      <li>The only external communication is with the OpenAI API for image or dish name processing.</li>
+      <li>Data transmissions may occur to servers located outside Argentina.</li>
+      <li>No data is sold or shared with third parties.</li>
+    </ul>
+
+    <h2>6. Data Retention</h2>
+    <p>All data remains stored locally on the device. Deleting the account or uninstalling the app removes all data.</p>
+
+    <h2>7. User Rights</h2>
+    <ul>
+      <li>Access stored data via the 'Profile' section.</li>
+      <li>Delete data using the 'Delete Account' option.</li>
+      <li>Edit data through the 'Edit Profile' option.</li>
+    </ul>
+
+    <h2>8. Security Measures</h2>
+    <p>Data is stored locally using standard React Native AsyncStorage practices.<br>
+    No personal credentials are sent to proprietary servers.<br>
+    Future Firebase Analytics usage will collect anonymous and secure usage data.</p>
+
+    <h2>9. Minors</h2>
+    <p>The application is not intended for users under 13 years of age. We do not knowingly collect data from minors.</p>
+
+    <h2>10. Policy Updates</h2>
+    <p>The policy version and date are available in Settings → Privacy Policy.<br>
+    Significant changes will be notified within the app upon launch.</p>
+
+    <p>By using MacroLens, you agree to this Privacy Policy.</p>
+  </div>
 </body>
 </html>
